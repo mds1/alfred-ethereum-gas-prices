@@ -7,15 +7,29 @@
 	<key>category</key>
 	<string>Tools</string>
 	<key>connections</key>
-	<dict/>
+	<dict>
+		<key>3236587A-96A8-44D0-8A99-57C1731CEE67</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>354FC2CD-CF8A-45A1-99E9-73CFCA5F3271</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
 	<key>createdby</key>
 	<string>Matt Solomon</string>
 	<key>description</key>
-	<string></string>
+	<string>Get current Ethereum gas prices from EthGasStation</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Get Ethereum Gas Prices</string>
+	<string>Ethereum Gas Prices</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -54,7 +68,7 @@ python gas.py $query</string>
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
-				<string>Optionally, enter a number to compute the cost in dollars</string>
+				<string></string>
 				<key>title</key>
 				<string>Get Ethereum gas prices</string>
 				<key>type</key>
@@ -69,9 +83,34 @@ python gas.py $query</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>354FC2CD-CF8A-45A1-99E9-73CFCA5F3271</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
 	</array>
 	<key>readme</key>
-	<string></string>
+	<string>Ethereum Gas Prices
+===================
+
+Alfred workflow to quickly get gas prices using the EthGasStation API
+
+Usage
+-------------
+
+`gas`: Shows the fast, average, and slow gas prices. Highlight a gas price and click enter to copy it to the clipboard</string>
 	<key>uidata</key>
 	<dict>
 		<key>3236587A-96A8-44D0-8A99-57C1731CEE67</key>
@@ -81,7 +120,16 @@ python gas.py $query</string>
 			<key>ypos</key>
 			<integer>90</integer>
 		</dict>
+		<key>354FC2CD-CF8A-45A1-99E9-73CFCA5F3271</key>
+		<dict>
+			<key>xpos</key>
+			<integer>315</integer>
+			<key>ypos</key>
+			<integer>90</integer>
+		</dict>
 	</dict>
+	<key>version</key>
+	<string>v1.0.0</string>
 	<key>webaddress</key>
 	<string>https://mattsolomon.dev</string>
 </dict>

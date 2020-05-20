@@ -68,19 +68,22 @@ def main(wf):
         title=gasPrices["fast"] + " gwei, " + gasWaits["fast"] + " minute wait",
         subtitle="Fast price",
         icon="img/fast.png",
-        valid=False,  # tells Alfred item is not actionable
+        valid=True,  # tells Alfred item is actionable
+        arg=gasPrices["fast"],  # argument passed to next action
     )
     wf.add_item(
         title=gasPrices["average"] + " gwei, " + gasWaits["average"] + " minute wait",
         subtitle="Standard price",
         icon="img/average.png",
-        valid=False,
+        valid=True,
+        arg=gasPrices["fast"],
     )
     wf.add_item(
         title=gasPrices["safeLow"] + " gwei, " + gasWaits["safeLow"] + " minute wait",
         subtitle="Safe low price",
         icon="img/slow.png",
-        valid=False,
+        valid=True,
+        arg=gasPrices["fast"],
     )
 
     # Send output to Alfred. You can only call this once.
